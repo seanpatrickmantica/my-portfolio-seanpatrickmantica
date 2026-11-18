@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>Sean Patrick Mantica | Network Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="icon" type="image/svg+xml" href="Images/sean-favicon.svg"/>
+<link rel="shortcut icon" href="Images/sean-favicon.svg" type="image/svg+xml"/>
+</head>
+<body id="top">
+
+<div class="grid-bg"></div>
+
+<nav id="site-nav">
+  <a class="nav-logo" href="index.html">SEAN PATRICK MANTICA</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <ul class="nav-links">
+    <li><a href="About.html">About</a></li>
+    <li><a href="Skills.html">Skills</a></li>
+    <li><a href="Certificates.html">Certificates</a></li>
+    <li><a href="Experience.html">Experience</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="mailto:seanpatrickmantica@gmail.com">Hire Me</a>
+</nav>
+
+<main>
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag fade-up">Available for opportunities</div>
+      <h1 class="hero-name fade-up delay-1">Sean <br/>Patrick <br/>Mantica</h1>
+      <div class="hero-title fade-up delay-2">// Solution Head Engineer</div>
+      <p class="hero-desc fade-up delay-3">
+        Designing, deploying, and securing enterprise networks across multi-site environments. 
+        Specializing in SD-WAN, Zero Trust architecture, and large-scale network infrastructure.
+      </p>
+      <div class="hero-btns fade-up delay-4">
+        <a class="btn-primary" href="Projects.html">View My Work</a>
+        <a class="btn-outline" href="Contact.html">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- Network diagram SVG -->
+    <div class="hero-visual fade-up delay-5">
+    <svg class="network-diagram" viewBox="0 0 820 690" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Enterprise network topology showing core routing, security, switching, data center, storage, load balancing, and three servers">
+      <defs>
+        <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+
+      <rect width="820" height="690" rx="4" fill="#0d1219" stroke="#1e2d3d" stroke-width="1"/>
+      <text x="20" y="30" font-family="Space Mono" font-size="11" fill="#5a7a96" letter-spacing="2">NETWORK_TOPOLOGY :: LIVE</text>
+      <circle cx="775" cy="24" r="4" fill="#00ff9d" filter="url(#glow)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+
+      <ellipse cx="400" cy="70" rx="56" ry="21" fill="#111820" stroke="#00d4ff" stroke-width="1.5"/>
+      <text x="400" y="74" font-family="Space Mono" font-size="10" fill="#00d4ff" text-anchor="middle">INTERNET</text>
+
+      <rect x="350" y="115" width="100" height="34" rx="3" fill="#0d1219" stroke="#00d4ff" stroke-width="1.5"/>
+      <text x="400" y="136" font-family="Space Mono" font-size="10" fill="#00d4ff" text-anchor="middle">CORE ROUTER</text>
+      <line x1="400" y1="91" x2="400" y2="115" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="5,4">
+        <animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1s" repeatCount="indefinite"/>
+      </line>
+      <circle r="3" fill="#00d4ff" filter="url(#glow)">
+        <animateMotion dur="2s" repeatCount="indefinite" path="M400,91 L400,115"/>
+      </circle>
+
+      <rect x="350" y="165" width="100" height="34" rx="3" fill="#0d1219" stroke="#ff6b35" stroke-width="1.5"/>
+      <text x="400" y="186" font-family="Space Mono" font-size="10" fill="#ff6b35" text-anchor="middle">NGFW</text>
+      <line x1="400" y1="149" x2="400" y2="165" stroke="#ff6b35" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+      <rect x="350" y="285" width="100" height="34" rx="3" fill="#0d1219" stroke="#00d4ff" stroke-width="1.5"/>
+      <text x="400" y="306" font-family="Space Mono" font-size="10" fill="#00d4ff" text-anchor="middle">CORE SWITCH</text>
+      <line x1="400" y1="199" x2="400" y2="285" stroke="#ff6b35" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+      <rect x="620" y="115" width="130" height="42" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1.2"/>
+      <text x="685" y="133" font-family="Space Mono" font-size="9" fill="#00ff9d" text-anchor="middle">SD-WAN</text>
+      <text x="685" y="147" font-family="Space Mono" font-size="8" fill="#5a7a96" text-anchor="middle">BRANCH LINK</text>
+      <line x1="450" y1="132" x2="620" y2="136" stroke="#00ff9d" stroke-width="1.2" stroke-dasharray="4,4"/>
+
+      <path d="M400 319 V337 H210 V355 M400 337 H590 V355" stroke="#00d4ff" stroke-width="1.2" stroke-dasharray="5,4" opacity=".8"/>
+      <rect x="135" y="355" width="150" height="38" rx="3" fill="#0d1219" stroke="#00d4ff" stroke-width="1.3"/>
+      <text x="210" y="379" font-family="Space Mono" font-size="10" fill="#00d4ff" text-anchor="middle">DISTRIBUTION SWITCH A</text>
+      <rect x="515" y="355" width="150" height="38" rx="3" fill="#0d1219" stroke="#00d4ff" stroke-width="1.3"/>
+      <text x="590" y="379" font-family="Space Mono" font-size="10" fill="#00d4ff" text-anchor="middle">DISTRIBUTION SWITCH B</text>
+
+      <path d="M210 393 V410 H110 V435 M210 410 H295 V435" stroke="#00d4ff" stroke-width="1.1" opacity=".7"/>
+      <rect x="40" y="435" width="140" height="34" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1.2"/>
+      <text x="110" y="456" font-family="Space Mono" font-size="9" fill="#00ff9d" text-anchor="middle">ACCESS SWITCH</text>
+      <rect x="225" y="435" width="140" height="34" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1.2"/>
+      <text x="295" y="456" font-family="Space Mono" font-size="9" fill="#00ff9d" text-anchor="middle">ACCESS SWITCH</text>
+
+      <path d="M110 469 V492 H62 V520 M110 492 H157 V520 M295 469 V492 H252 V520 M295 492 H347 V520" stroke="#00ff9d" stroke-width="1" opacity=".55"/>
+      <rect x="20" y="520" width="84" height="36" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1"/>
+      <text x="62" y="535" font-family="Space Mono" font-size="8" fill="#00ff9d" text-anchor="middle">VLAN 10</text>
+      <text x="62" y="548" font-family="Space Mono" font-size="7" fill="#5a7a96" text-anchor="middle">CORPORATE</text>
+      <rect x="115" y="520" width="84" height="36" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1"/>
+      <text x="157" y="535" font-family="Space Mono" font-size="8" fill="#00ff9d" text-anchor="middle">VLAN 20</text>
+      <text x="157" y="548" font-family="Space Mono" font-size="7" fill="#5a7a96" text-anchor="middle">SERVERS</text>
+      <rect x="210" y="520" width="84" height="36" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1"/>
+      <text x="252" y="535" font-family="Space Mono" font-size="8" fill="#00ff9d" text-anchor="middle">VLAN 30</text>
+      <text x="252" y="548" font-family="Space Mono" font-size="7" fill="#5a7a96" text-anchor="middle">DMZ</text>
+      <rect x="305" y="520" width="84" height="36" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1"/>
+      <text x="347" y="535" font-family="Space Mono" font-size="8" fill="#00ff9d" text-anchor="middle">VLAN 40</text>
+      <text x="347" y="548" font-family="Space Mono" font-size="7" fill="#5a7a96" text-anchor="middle">GUEST</text>
+
+      <path d="M590 393 V435" stroke="#00d4ff" stroke-width="1.1" opacity=".7"/>
+      <rect x="490" y="435" width="135" height="34" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1.2"/>
+      <text x="557.5" y="456" font-family="Space Mono" font-size="9" fill="#00ff9d" text-anchor="middle">DATA CENTER SWITCH</text>
+      <line x1="625" y1="452" x2="650" y2="452" stroke="#00d4ff" stroke-width="1.2" stroke-dasharray="4,3"/>
+      <rect x="650" y="435" width="130" height="34" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1.2"/>
+      <text x="715" y="456" font-family="Space Mono" font-size="9" fill="#00ff9d" text-anchor="middle">TOP-OF-RACK SWITCH</text>
+      <line x1="715" y1="469" x2="715" y2="485" stroke="#ff6b35" stroke-width="1.3" stroke-dasharray="3,2"/>
+      <rect x="655" y="485" width="120" height="34" rx="3" fill="#0d1219" stroke="#ff6b35" stroke-width="1.3"/>
+      <text x="715" y="506" font-family="Space Mono" font-size="10" fill="#ff6b35" text-anchor="middle">LOAD BALANCER</text>
+
+      <path d="M650 452 H640 V500 H470 V520 M640 500 H590 V520 M780 452 H800 V640 M800 560 H795 M800 600 H795 M800 640 H795" stroke="#00d4ff" stroke-width="1.1" opacity=".7"/>
+      <rect x="420" y="520" width="100" height="34" rx="3" fill="#0d1219" stroke="#ff6b35" stroke-width="1.2"/>
+      <text x="470" y="542" font-family="Space Mono" font-size="9" fill="#ff6b35" text-anchor="middle">HCI</text>
+      <rect x="530" y="520" width="120" height="34" rx="3" fill="#0d1219" stroke="#ff6b35" stroke-width="1.2"/>
+      <text x="590" y="542" font-family="Space Mono" font-size="9" fill="#ff6b35" text-anchor="middle">SAN STORAGE</text>
+
+      <rect x="665" y="545" width="130" height="30" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1.2"/>
+      <text x="730" y="565" font-family="Space Mono" font-size="9" fill="#00ff9d" text-anchor="middle">SERVER 1</text>
+      <rect x="665" y="585" width="130" height="30" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1.2"/>
+      <text x="730" y="605" font-family="Space Mono" font-size="9" fill="#00ff9d" text-anchor="middle">SERVER 2</text>
+      <rect x="665" y="625" width="130" height="30" rx="3" fill="#0d1219" stroke="#00ff9d" stroke-width="1.2"/>
+      <text x="730" y="645" font-family="Space Mono" font-size="9" fill="#00ff9d" text-anchor="middle">SERVER 3</text>
+
+      <text x="20" y="675" font-family="Space Mono" font-size="8" fill="#5a7a96" letter-spacing="1">STATUS: ALL SYSTEMS NOMINAL</text>
+      <text x="800" y="675" font-family="Space Mono" font-size="8" fill="#00d4ff" text-anchor="end">99.99%</text>
+    </svg>
+    </div>
+  </div>
+</section>
+
+<div class="stat-strip">
+  <div class="stat-inner">
+    <div>
+      <div class="stat-num">8<span>+</span></div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div>
+      <div class="stat-num">40<span>+</span></div>
+      <div class="stat-label">Sites Deployed</div>
+    </div>
+    <div>
+      <div class="stat-num">99.99<span>%</span></div>
+      <div class="stat-label">Uptime Achieved</div>
+    </div>
+    <div>
+      <div class="stat-num" data-certification-count>26</div>
+      <div class="stat-label">Certifications</div>
+    </div>
+  </div>
+</div>
+
+<section class="explore">
+  <div class="section-wrap">
+    <div class="section-label">Explore</div>
+    <h2 class="section-title">Browse the portfolio</h2>
+    <div class="explore-grid">
+      <a class="explore-card" href="About.html"><h3>About</h3><p>Background, focus areas and what I do.</p><span>Open page →</span></a>
+      <a class="explore-card" href="Skills.html"><h3>Skills</h3><p>Routing, switching, security and tooling.</p><span>Open page →</span></a>
+      <a class="explore-card" href="Certificates.html"><h3>Certificates</h3><p>Professional certifications and credentials.</p><span>Open page →</span></a>
+      <a class="explore-card" href="Experience.html"><h3>Experience</h3><p>Roles and responsibilities over the years.</p><span>Open page →</span></a>
+      <a class="explore-card" href="Projects.html"><h3>Projects</h3><p>Selected network design and deployment work.</p><span>Open page →</span></a>
+      <a class="explore-card" href="Contact.html"><h3>Contact</h3><p>Email, LinkedIn, GitHub and CV.</p><span>Open page →</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-copy">© 2026 Sean Patrick Mantica — Network Engineer</div>
+  <a class="footer-back" href="#top">Back to top ↑</a>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
